@@ -149,7 +149,7 @@ Open your browser to http://localhost:3000. You will see something like this!
 
 Open a new terminal ("Terminal" > "New Terminal"), create the backend directory, change to new directory and initialize a node project.
 
-Just type [Enter] to all questions and anwer "yes" at the end.
+Just type [Enter] to all questions and answer "yes" at the end.
 
 ```console
 mkdir backend
@@ -191,6 +191,12 @@ About to write to /home/brainfork/github/myproject/backend/package.json:
 Is this OK? (yes) yes
 ```
 
+Install express package as dependency in our project. The second package (nodemon) help us automatically restarting the node application when file changes.
+
+```console
+npm install express --save
+npm install -g nodemon
+```
 
 # Next Steps
 
