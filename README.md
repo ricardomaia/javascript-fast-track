@@ -17,7 +17,8 @@ The objective of this project is offer a simple and fast overview about modern J
 - [ ] Install and create a React project (front-end)
 - [ ] Install Express and configure dev scripts
 - [ ] Install MongoDB and create a simple database
-- [ ] Create a backend service
+- [ ] Create a back-end service
+- [ ] Create a simple client interface to consumes the back-end API and shows our data
 
 ## Install Node
 
@@ -92,7 +93,8 @@ Let's take a look in our list...
 - [ ] Install and create a React project (front-end)
 - [ ] Install Express and configure dev scripts
 - [ ] Install MongoDB and create a simple database
-- [ ] Create a backend service
+- [ ] Create a back-end service
+- [ ] Create a simple client interface to consumes the back-end API and shows our data
 
 Ok! Next step... Create and clone your GitHub repository. Come on!
 
@@ -115,9 +117,33 @@ cd github
 git clone https://github.com/[your-username]/myproject.git
 ```
 
+A good idea is set globally your name and email to use with Git.
+
+```console
+git config --global user.name "John Doe"
+git config --global user.email doe@exemple.com
+```
+
 ## Install and create a React project
 
-it will make sense later
+In our project we will use two directories, "frontend" and "backend". It will make sense later!
+
+Next we are going to create our "React" project.
+
+```console
+npx create-react-app frontend
+code ./
+```
+
+```console
+npm start
+npm run build
+```
+
+Open your browser to http://localhost:3000
+
+<img src="https://i.imgur.com/AhdERMX.png" />
+
 
 # Next Steps
 
