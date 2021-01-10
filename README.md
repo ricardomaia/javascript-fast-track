@@ -21,6 +21,20 @@ The objective of this project is offer a simple and fast overview about moderm J
 
 ## Install Node
 
+```console
+curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+After installation verify node version to check if everything is ok.
+
+```console
+node -v
+v14.15.4
+```
+
+If you get something like ```v14.15.4``` good job!
+
 ## Install Git
 
 ## Install Visutal Studio Code
