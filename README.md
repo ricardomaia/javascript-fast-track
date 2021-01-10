@@ -37,6 +37,12 @@ If you get something like ```v14.15.4``` good job!
 
 ## Install Git
 
+Install Git is easy as any other package on Ubuntu. There's no rocket science here!
+
+```console
+sudo apt install git
+```
+
 ## Install Visutal Studio Code
 
 ## Create and clone a GitHub repository
