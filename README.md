@@ -65,8 +65,7 @@ Finally open Visual Studio code just typing ```code``` on terminal or search for
 
 <img src="https://i.imgur.com/En9Q9eo.png" />
 
-let's see how is our list...
-
+Let's see how is our list...
 
 - [x] Install Node
 - [x] Install Git
@@ -77,9 +76,15 @@ let's see how is our list...
 - [ ] Install MongoDB and create a simple database
 - [ ] Create a backend service
 
-Ok! Next step... Create and clone your GitHub repository. Let's go!
+Ok! Next step... Create and clone your GitHub repository. Come on!
 
 ## Create and clone a GitHub repository
+
+If you don't have an account yet, create one! Go to https://github.com/, click on the "Sign up" button. Fill and submit all form informations, so confirm your email on the message send by GitHub. After all regular steps to create your account Sign in.
+
+```console
+git clone https://github.com/[username]/[repository].git
+```
 
 ## Install and create a React project
 
