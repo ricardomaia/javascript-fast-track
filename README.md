@@ -43,7 +43,7 @@ Install Git is easy as any other package on Ubuntu. There's no rocket science he
 sudo apt install git
 ```
 
-## Install Visutal Studio Code
+## Install Visual Studio Code and some amazing extensions
 
 To install VSCode from original Microsoft sources, first you need add the repository address to apt source list and trust in their public key. 
 
@@ -80,6 +80,8 @@ Now, look on the left side menu. Click on the <img src="https://i.imgur.com/XjAb
  - Prettier - Code formatter (Prettier)
  - Bracket Pair Colorizer 2 (CoenraadS)
  - DotENV (mikestead)
+ 
+That's all for now. Close Visual Studio Code.
 
 Let's see how is our list...
 
