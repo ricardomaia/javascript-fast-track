@@ -1,4 +1,4 @@
-# Javascript Fast Track
+# Javascript Fast Track :rocket:
 
 The objective of this project is offer a simple and fast overview about modern Javascript ecosystem.
 
@@ -64,6 +64,20 @@ sudo apt install code
 Finally open Visual Studio code just typing ```code``` on terminal or search for appropriate application icon in the Applicatons List.
 
 <img src="https://i.imgur.com/En9Q9eo.png" />
+
+let's see how is our list...
+
+
+- [x] Install Node
+- [x] Install Git
+- [x] Install Visual Studio Code and some useful extensions
+- [ ] Create and clone a GitHub repository
+- [ ] Install and create a React project (front-end)
+- [ ] Install Express and configure dev scripts
+- [ ] Install MongoDB and create a simple database
+- [ ] Create a backend service
+
+Ok! Next step... Create and clone your GitHub repository. Let's go!
 
 ## Create and clone a GitHub repository
 
