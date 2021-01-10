@@ -45,7 +45,7 @@ sudo apt install git
 
 ## Install Visutal Studio Code
 
-To install VSCode from original Microsoft sources first you need add the repository address to apt source list and trust in their public key. 
+To install VSCode from original Microsoft sources, first you need add the repository address to apt source list and trust in their public key. 
 
 Commands output below are supressed by ```[...]```.
 
@@ -64,6 +64,22 @@ sudo apt install code
 Finally open Visual Studio code just typing ```code``` on terminal or search for appropriate application icon in the Applicatons List.
 
 <img src="https://i.imgur.com/En9Q9eo.png" />
+
+Now, look on the left side menu. Click on the <img src="https://i.imgur.com/XjAbULo.png" /> icon and type the name of extension to install. Finally click in the blue button labeled "install". Repeat the process for each desired extension.
+
+<img src="https://i.imgur.com/wli6nMP.png" />
+
+### Recommended Extensions
+ - Git Extension Pack (Don Jayamanne)
+ - Formatting Toggle (tombonnike)(
+ - Babel JavaScript (Michael McDermott)
+ - file-icons (file-icons)
+ - Material Icon Theme (Philipp Kief)
+ - npm Intellisense (Christian Kohler)
+ - Path Intellisense (Christian Kohler)
+ - Prettier - Code formatter (Prettier)
+ - Bracket Pair Colorizer 2 (CoenraadS)
+ - DotENV (mikestead)
 
 Let's see how is our list...
 
