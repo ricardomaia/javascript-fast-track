@@ -1,6 +1,6 @@
 # Javascript Fast Track
 
-The objective of this project is offer a simple and fast overview about moderm Javascript ecosystem.
+The objective of this project is offer a simple and fast overview about modern Javascript ecosystem.
 
 **Requirements:**
 
