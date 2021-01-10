@@ -128,21 +128,68 @@ git config --global user.email doe@exemple.com
 
 In our project we will use two directories, "frontend" and "backend". It will make sense later!
 
-Next we are going to create our "React" project.
+Next we are going to create our "React" project. Then open Visual Studio Code on current directory.
 
 ```console
 npx create-react-app frontend
 code ./
 ```
+You shold see our project directory structure into Visual Studio Code. Now open a new terminal on top menu "Terminal" > "New Terminal" and enter the following commands:
 
 ```console
+cd frontend
 npm start
-npm run build
 ```
+
+<img src="https://i.imgur.com/Jjtzc0Y.png" />
 
 Open your browser to http://localhost:3000. You will see something like this!
 
 <img src="https://i.imgur.com/AhdERMX.png" />
+
+Open a new terminal ("Terminal" > "New Terminal"), create the backend directory, change to new directory and initialize a node project.
+
+Just type [Enter] to all questions and anwer "yes" at the end.
+
+```console
+mkdir backend
+cd backend
+npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (backend) 
+version: (1.0.0) 
+description: 
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: 
+author: 
+license: (ISC) 
+About to write to /home/brainfork/github/myproject/backend/package.json:
+
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+Is this OK? (yes) yes
+```
 
 
 # Next Steps
