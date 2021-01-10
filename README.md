@@ -1,1 +1,1 @@
-# javascript-fast-track
+# Javascript Fast Track
