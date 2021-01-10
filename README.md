@@ -191,11 +191,99 @@ About to write to /home/brainfork/github/myproject/backend/package.json:
 Is this OK? (yes) yes
 ```
 
-Install express package as dependency in our project. The second package (nodemon) help us automatically restarting the node application when file changes.
+Install **express** package as dependency in our project. The others packages, like nodemon will be used only at development time.
 
 ```console
 npm install express --save
-npm install -g nodemon
+npm install nodemon --save-dev
+npm install cors --save-dev
+npm install reload --save-dev
+npm install dotenv --save-dev
+```
+
+At the end your ```package.json``` file must be like this:
+
+```json
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7",
+    "reload": "^3.1.1"
+  }
+}
+```
+
+Now on VSCode create the entrypoint file to the backend (index.js).
+
+```javascript
+const express = require('express')
+const http = require('http')
+const reload = require('reload')
+const bodyParser = require('body-parser')
+const logger = require('morgan')
+const cors = require('cors')
+const dotenv = require('dotenv')
+
+// Environment Configurations
+dotenv.config({ path: `${__dirname} /../.env` })
+const env = process.env.NODE_ENV
+
+// Routes
+const importChats = require('./routes/import-chats')
+
+const app = express()
+app.use(logger('dev'))
+app.use(bodyParser.json())
+app.use(express.urlencoded({ extended: false }))
+
+const corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+app.use(cors(corsOptions))
+app.set('port', process.env.PORT || 3000)
+app.use(express.static('public'))
+
+// Using routes
+app.use('/import', importChats)
+
+// Reload code here
+reload(app)
+  .then(function (reloadReturned) {
+    // reloadReturned is documented in the returns API in the README
+
+    // Reload started, start web server
+    server.listen(app.get('port'), function () {
+      console.log('Web server listening on port ' + app.get('port'))
+    })
+  })
+  .catch(function (err) {
+    console.error(
+      'Reload could not start, could not start server/sample app',
+      err
+    )
+  })
+var server = http.createServer(app)
+
+/**
+ *
+ */
+app.get('/foo', (req, res) => {
+  res.send('foo')
 ```
 
 # Next Steps
