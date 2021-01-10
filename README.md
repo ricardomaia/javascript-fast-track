@@ -14,7 +14,7 @@ The objective of this project is offer a simple and fast overview about modern J
 - [ ] Install Git
 - [ ] Install Visual Studio Code and some useful extensions
 - [ ] Create and clone a GitHub repository
-- [ ] Install and create a React project (front-end)
+- [ ] Create a React project (front-end)
 - [ ] Install Express and configure dev scripts
 - [ ] Install MongoDB and create a simple database
 - [ ] Create a back-end service
@@ -90,7 +90,7 @@ Let's take a look in our list...
 - [x] Install Git
 - [x] Install Visual Studio Code and some useful extensions
 - [ ] Create and clone a GitHub repository
-- [ ] Install and create a React project (front-end)
+- [ ] Create a React project (front-end)
 - [ ] Install Express and configure dev scripts
 - [ ] Install MongoDB and create a simple database
 - [ ] Create a back-end service
@@ -124,7 +124,7 @@ git config --global user.name "John Doe"
 git config --global user.email doe@exemple.com
 ```
 
-## Install and create a React project
+## Create a React project
 
 In our project we will use two directories, "frontend" and "backend". It will make sense later!
 
@@ -140,7 +140,7 @@ npm start
 npm run build
 ```
 
-Open your browser to http://localhost:3000
+Open your browser to http://localhost:3000. You will see something like this!
 
 <img src="https://i.imgur.com/AhdERMX.png" />
 
