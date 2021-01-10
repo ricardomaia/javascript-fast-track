@@ -86,8 +86,15 @@ Now click on the button "Create repository".
 
 <img src="https://i.imgur.com/poNKofC.png" />
 
+Now you will now see your repository page. Notice a green button with the text "Code". Click to display the drop-down menu and copy the address inside input box.
+
+<img src="https://i.imgur.com/XWY0397.png" />
+
 ```console
-git clone https://github.com/[username]/[repository].git
+cd ~
+mkdir github
+cd github
+git clone https://github.com/[your-username]/myproject.git
 ```
 
 ## Install and create a React project
