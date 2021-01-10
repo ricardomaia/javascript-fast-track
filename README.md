@@ -83,7 +83,7 @@ Now, look on the left side menu. Click on the <img src="https://i.imgur.com/XjAb
  
 That's all for now. Close Visual Studio Code.
 
-Let's see how is our list...
+Let's take a look in our list...
 
 - [x] Install Node
 - [x] Install Git
