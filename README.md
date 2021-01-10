@@ -45,6 +45,26 @@ sudo apt install git
 
 ## Install Visutal Studio Code
 
+To install VSCode from original Microsoft sources first you need add the repository address to apt source list and trust in their public key. 
+
+Commands output below are supressed by ```[...]```.
+
+```console
+sudo apt update
+[...]
+sudo apt install software-properties-common apt-transport-https wget
+[...]
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add --
+[...]
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+[...]
+sudo apt install code
+```
+
+Finally open Visual Studio code just typing ```code``` on terminal or search for appropriate application icon in the Applicatons List.
+
+<img src="https://i.imgur.com/En9Q9eo.png" />
+
 ## Create and clone a GitHub repository
 
 ## Install and create a React project
