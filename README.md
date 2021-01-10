@@ -82,6 +82,10 @@ Ok! Next step... Create and clone your GitHub repository. Come on!
 
 If you don't have an account yet, create one! Go to https://github.com/, click on the "Sign up" button. Fill and submit all form informations, so confirm your email on the message send by GitHub. After all regular steps to create your account Sign in.
 
+Now click on the button "Create repository".
+
+<img src="https://i.imgur.com/poNKofC.png" />
+
 ```console
 git clone https://github.com/[username]/[repository].git
 ```
