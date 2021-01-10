@@ -10,7 +10,7 @@ The objective of this project is offer a simple and fast overview about moderm J
 
 # Roadmap
 
-- [ ] Install Node
+- [ ] [Install Node](#install-node)
 - [ ] Install Git
 - [ ] Install Visual Studio Code and some useful extensions
 - [ ] Create and clone a GitHub repository
