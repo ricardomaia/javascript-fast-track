@@ -446,13 +446,9 @@ Click on **Source Control** icon <img src="https://i.imgur.com/f5LYKkL.png" /> a
 
 <img src="https://i.imgur.com/U22Ctcp.png" />
 
-<img src="https://i.imgur.com/XEGgTEf.png" />        
-
 Push to remote repository on GitHub
 
 <img src="https://i.imgur.com/MgODr9G.png" />
-
-<img src="https://i.imgur.com/lRTzNF7.png" />
 
 
 # Next Steps
