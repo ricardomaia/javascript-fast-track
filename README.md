@@ -433,6 +433,22 @@ One more time, let's take a look in our list...
 - [ ] Deploy our application deploy to heroku from GitHub
 
 
+
+## Commit and push changes to GitHub repository
+
+Commit to local repository
+<img src="https://i.imgur.com/XEGgTEf.png" />
+          
+Create ```.gitignore``` file on root of backend directory to ignore node_modules.
+
+```
+node_modules
+```
+
+Push to remote repository
+<img src="https://i.imgur.com/lRTzNF7.png" />
+
+
 # Next Steps
 
 - Separate and each service into a container
