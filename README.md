@@ -436,16 +436,22 @@ One more time, let's take a look in our list...
 
 ## Commit and push changes to GitHub repository
 
-Commit to local repository
-<img src="https://i.imgur.com/XEGgTEf.png" />
-          
-Create ```.gitignore``` file on root of backend directory to ignore node_modules.
+Create ```.gitignore``` file on root of backend directory to ignore node_modules. 
 
-```
+```.gitignore
 node_modules
 ```
 
-Push to remote repository
+Click on **Source Control** icon <img src="https://i.imgur.com/f5LYKkL.png" /> and  commit to local repository with a message.
+
+<img src="https://i.imgur.com/U22Ctcp.png" />
+
+<img src="https://i.imgur.com/XEGgTEf.png" />        
+
+Push to remote repository on GitHub
+
+<img src="https://i.imgur.com/MgODr9G.png" />
+
 <img src="https://i.imgur.com/lRTzNF7.png" />
 
 
