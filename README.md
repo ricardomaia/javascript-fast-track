@@ -7,6 +7,10 @@ The objective of this project is offer a simple and fast overview about modern J
  - Ubuntu Desktop 20.04 LTS
  - Basic knowledge about Linux commands
  - Basic knowledge about programming
+ 
+ ***Source Code***
+ 
+ The source code for this project can be found at: https://github.com/ricardomaia/myproject
 
 # Roadmap
 
