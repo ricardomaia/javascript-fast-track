@@ -7,23 +7,23 @@ The objective of this project is offer a simple and fast overview about modern J
  - Ubuntu Desktop 20.04 LTS
  - Basic knowledge about Linux commands
  - Basic knowledge about programming
- 
- ***Source Code***
- 
- The source code for this project can be found at: https://github.com/ricardomaia/myproject
+
+**Source Code**
+
+The source code for this project can be found at: https://github.com/ricardomaia/myproject
 
 # Roadmap
 
-- [ ] [Install Node](#install-node)
-- [ ] Install Git
-- [ ] Install Visual Studio Code and some useful extensions
-- [ ] Create and clone a GitHub repository
-- [ ] Create a React project (front-end)
-- [ ] Install Express and configure dev scripts
-- [ ] Create a back-end service
-- [ ] Create a simple client interface to consumes the back-end API and shows our data
-- [ ] Commit and push changes to GitHub repository
-- [ ] Deploy our application deploy to heroku from GitHub
+*   [ ] [Install Node](#install-node)
+*   [ ] Install Git
+*   [ ] Install Visual Studio Code and some useful extensions
+*   [ ] Create and clone a GitHub repository
+*   [ ] Create a React project (front-end)
+*   [ ] Install Express and configure dev scripts
+*   [ ] Create a back-end service
+*   [ ] Create a simple client interface to consumes the back-end API and shows our data
+*   [ ] Commit and push changes to GitHub repository
+*   [ ] Deploy our application deploy to heroku from GitHub
 
 ## Install Node
 
@@ -39,7 +39,7 @@ node -v
 v14.15.4
 ```
 
-If you get something like ```v14.15.4``` good job!
+If you get something like `v14.15.4` good job!
 
 ## Install Git
 
@@ -51,9 +51,9 @@ sudo apt install git
 
 ## Install Visual Studio Code and some amazing extensions
 
-To install VSCode from original Microsoft sources, first you need add the repository address to apt source list and trust in their public key. 
+To install VSCode from original Microsoft sources, first you need add the repository address to apt source list and trust in their public key.
 
-Commands output below are supressed by ```[...]```.
+Commands output below are supressed by `[...]`.
 
 ```console
 sudo apt update
@@ -67,40 +67,45 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt install code
 ```
 
-Finally open Visual Studio code just typing ```code``` on terminal or search for appropriate application icon in the Applicatons List.
+Finally open Visual Studio code just typing `code` on terminal or search for appropriate application icon in the Applicatons List.
 
-<img src="https://i.imgur.com/En9Q9eo.png" />
+![](https://i.imgur.com/En9Q9eo.png)
 
-Now, look on the left side menu. Click on the <img src="https://i.imgur.com/XjAbULo.png" /> icon and type the name of extension to install. Finally click in the blue button labeled "install". Repeat the process for each desired extension.
+Now, look on the left side menu. Click on the 
 
-<img src="https://i.imgur.com/wli6nMP.png" />
+![](https://i.imgur.com/XjAbULo.png)
+
+icon and type the name of extension to install. Finally click in the blue button labeled "install". Repeat the process for each desired extension.
+
+![](https://i.imgur.com/wli6nMP.png)
 
 ### Recommended Extensions
- - Git Extension Pack (Don Jayamanne)
- - Formatting Toggle (tombonnike)(
- - Babel JavaScript (Michael McDermott)
- - file-icons (file-icons)
- - Material Icon Theme (Philipp Kief)
- - npm Intellisense (Christian Kohler)
- - Path Intellisense (Christian Kohler)
- - Prettier - Code formatter (Prettier)
- - Bracket Pair Colorizer 2 (CoenraadS)
- - DotENV (mikestead)
- 
+
+*   Git Extension Pack (Don Jayamanne)
+*   Formatting Toggle (tombonnike)(
+*   Babel JavaScript (Michael McDermott)
+*   file-icons (file-icons)
+*   Material Icon Theme (Philipp Kief)
+*   npm Intellisense (Christian Kohler)
+*   Path Intellisense (Christian Kohler)
+*   Prettier - Code formatter (Prettier)
+*   Bracket Pair Colorizer 2 (CoenraadS)
+*   DotENV (mikestead)
+
 That's all for now. Close Visual Studio Code.
 
 Let's take a look in our list...
 
-- [x] Install Node
-- [x] Install Git
-- [x] Install Visual Studio Code and some useful extensions
-- [ ] Create and clone a GitHub repository
-- [ ] Create a React project (front-end)
-- [ ] Install Express and configure dev scripts
-- [ ] Create a back-end service
-- [ ] Create a simple client interface to consumes the back-end API and shows our data
-- [ ] Commit and push changes to GitHub repository
-- [ ] Deploy our application deploy to heroku from GitHub
+*   [x] Install Node
+*   [x] Install Git
+*   [x] Install Visual Studio Code and some useful extensions
+*   [ ] Create and clone a GitHub repository
+*   [ ] Create a React project (front-end)
+*   [ ] Install Express and configure dev scripts
+*   [ ] Create a back-end service
+*   [ ] Create a simple client interface to consumes the back-end API and shows our data
+*   [ ] Commit and push changes to GitHub repository
+*   [ ] Deploy our application deploy to heroku from GitHub
 
 Ok! Next step... Create and clone your GitHub repository. Come on!
 
@@ -110,11 +115,11 @@ If you don't have an account yet, create one! Go to https://github.com/, click o
 
 Now click on the button "Create repository".
 
-<img src="https://i.imgur.com/poNKofC.png" />
+![](https://i.imgur.com/poNKofC.png)
 
 Now you will now see your repository page. Notice a green button with the text "Code". Click to display the drop-down menu and copy the address inside input box.
 
-<img src="https://i.imgur.com/XWY0397.png" />
+![](https://i.imgur.com/XWY0397.png)
 
 ```console
 cd ~
@@ -140,6 +145,7 @@ Next we are going to create our "React" project. Then open Visual Studio Code on
 npx create-react-app frontend
 code ./
 ```
+
 You shold see our project directory structure into Visual Studio Code. Now open a new terminal on top menu "Terminal" > "New Terminal" and enter the following commands:
 
 ```console
@@ -147,15 +153,15 @@ cd frontend
 npm start
 ```
 
-<img src="https://i.imgur.com/Jjtzc0Y.png" />
+![](https://i.imgur.com/Jjtzc0Y.png)
 
 Open your browser to http://localhost:3000. You will see something like this!
 
-<img src="https://i.imgur.com/AhdERMX.png" />
+![](https://i.imgur.com/AhdERMX.png)
 
 Open a new terminal ("Terminal" > "New Terminal"), create the backend directory, change to new directory and initialize a node project.
 
-Just type [Enter] to all questions and answer "yes" at the end.
+Just type \[Enter\] to all questions and answer "yes" at the end.
 
 ```console
 mkdir backend
@@ -209,7 +215,7 @@ npm install reload --save-dev
 npm install dotenv --save-dev
 ```
 
-At the end your ```package.json``` file must be like this:
+At the end your `package.json` file must be like this:
 
 ```json
 {
@@ -425,41 +431,161 @@ app.get('/hello', (req, res) => {
 
 One more time, let's take a look in our list...
 
-- [x] Install Node
-- [x] Install Git
-- [x] Install Visual Studio Code and some useful extensions
-- [x] Create and clone a GitHub repository
-- [x] Create a React project (front-end)
-- [x] Install Express and configure dev scripts
-- [x] Create a back-end service
-- [ ] Create a simple client interface to consumes the back-end API and shows our data
-- [ ] Commit and push changes to GitHub repository
-- [ ] Deploy our application deploy to heroku from GitHub
-
-
+*   [x] Install Node
+*   [x] Install Git
+*   [x] Install Visual Studio Code and some useful extensions
+*   [x] Create and clone a GitHub repository
+*   [x] Create a React project (front-end)
+*   [x] Install Express and configure dev scripts
+*   [x] Create a back-end service
+*   [ ] Create a simple client interface to consumes the back-end API and shows our data
+*   [ ] Commit and push changes to GitHub repository
+*   [ ] Deploy our application deploy to heroku from GitHub
 
 ## Commit and push changes to GitHub repository
 
-Create ```.gitignore``` file on root of backend directory to ignore node_modules. 
+Create `.gitignore` file on root of backend directory to ignore node\_modules.
 
-```.gitignore
+```
 node_modules
 ```
 
-Click on **Source Control** icon <img src="https://i.imgur.com/f5LYKkL.png" /> and  commit to local repository with a message.
+Click on **Source Control** icon 
 
-<img src="https://i.imgur.com/U22Ctcp.png" />
+![](https://i.imgur.com/f5LYKkL.png)
+
+and commit to local repository with a message.
+
+![](https://i.imgur.com/U22Ctcp.png)
 
 Push to remote repository on GitHub
 
-<img src="https://i.imgur.com/MgODr9G.png" />
+![](https://i.imgur.com/MgODr9G.png)
 
+# Extras
+
+## SSH Deploy
+
+### Add a deployer user
+
+```console
+adduser deployer
+```
+
+### Add permissions to destination directory
+
+```console
+chmod -R 775 destination_directory
+chown -R root.deployer destination_directory
+```
+
+### Create a SSH keys on your server
+
+Use NO PASSPHRASE.
+
+```console
+cd /home/deployer
+ssh-keygen -m PEM -t rsa -b 4096 -C "deployer@yourhost.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/deployer/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/deployer/.ssh/id_rsa
+Your public key has been saved in /home/deployer/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:QauskbwD7z2JgXM44HcrNYI4LpVdZYUst9NAPm0SFtk deployer@yourhost.com
+The key's randomart image is:
++---[RSA 4096]----+
+|   .* ..+o+..**  |
+|  .. . o.= .+o E |
+|..      = o.. o  |
+|     +..+ o . + .|
+|     +o*.*+o S . |
+|  ..*+*o.        |
+|    **o          |
+|       ..o .     |
+|    .+..         |
++----[SHA256]-----+
+
+```
+
+### Copy the public key to authorized_keys file
+
+```console
+cd /home/deployer/.ssh
+cat id_rsa.pub >> authorized_keys
+```
+
+### Backup your private key to use with GitHub actions
+
+```console
+cd /home/deployer/.ssh
+cat id_rsa
+```
+
+You will see something like this...
+
+```
+-----BEGIN RSA PRIVATE KEY-----
+MIIJKQIBAAKCAgEAldqG7aAxG2V7JrD+52YTn+WmZsPUahOaYPtgz+LCKtgKU5bJ
+kXGtcEuVrY0eLk1b6+8DUwRPe952l7uYCAE7n4QYD8vvGnVW/2Mw/xELZrcRbYhT
+HcTMbDzR7f51eUb1tmukJ/Xc/uvOd9pCbtEOQQkhHR7V+mmquqeUEDyZkXkrL/mT
+[...]
+rratHV/ZVyMEJtIddpgPTHVLl4LWO3gonIE0aVUcpPTra5YvTeDEoIsfqiPX5pFr
+MlIkfBfO8do/cYYoN0F1gQgfDFuja1JNvM/R+nELMGlxucyPexo5Gak+nhGvCI3l
+GZtLniFVV/LJSqX8szQuO+pafpMMfhf+lgeir9ug5TTZLRn9yE8JUi8MlUqq2sch
+-----END RSA PRIVATE KEY-----
+```
+
+### Set GitHub repository secrets
+
+Go to https://github.com/[:your_username]/[:repository]/settings/secrets/actions
+
+ - DEPLOY_KEY: Your SSH private key
+ - DEPLOY_HOST: VPS IP address or name
+ - DEPLOY_USER: Deployer username
+ - DEPLOY_TARGET: Destination folder for build files
+
+<img src="https://i.imgur.com/47OEjil.png">
+
+### Add a GitHub action file into your repository ```.github/workflows/deploy.yaml```
+
+```deploy.yaml
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - name: Install npm dependencies
+        run: npm install
+      - name: Run build task
+        run: npx next build && npx next export
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+          ARGS: "-rltgoDzvO --delete"
+          SOURCE: "out/"
+          REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
+          REMOTE_USER: ${{ secrets.DEPLOY_USER }}
+          TARGET: ${{ secrets.DEPLOY_TARGET }}
+```
 
 # Next Steps
 
-- Separate and each service into a container
-- Use a reverse proxy like Nginx in front of Express
-- Use a process manager for Node like [StrongLoop PM](http://strong-pm.io/)
+*   Separate and each service into a container
+*   Use a reverse proxy like Nginx in front of Express
+*   Use a process manager for Node like [StrongLoop PM](http://strong-pm.io/)
 
 # Quick References
- - [Git Cheat Sheets](https://training.github.com/)
+
+*   [Git Cheat Sheets](https://training.github.com/)
