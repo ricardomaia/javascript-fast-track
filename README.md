@@ -71,11 +71,7 @@ Finally open Visual Studio code just typing `code` on terminal or search for app
 
 ![](https://i.imgur.com/En9Q9eo.png)
 
-Now, look on the left side menu. Click on the 
-
-![](https://i.imgur.com/XjAbULo.png)
-
-icon and type the name of extension to install. Finally click in the blue button labeled "install". Repeat the process for each desired extension.
+Now, look on the left side menu. Click on the ![](https://i.imgur.com/XjAbULo.png) icon and type the name of extension to install. Finally click in the blue button labeled "install". Repeat the process for each desired extension.
 
 ![](https://i.imgur.com/wli6nMP.png)
 
@@ -450,11 +446,7 @@ Create `.gitignore` file on root of backend directory to ignore node\_modules.
 node_modules
 ```
 
-Click on **Source Control** icon 
-
-![](https://i.imgur.com/f5LYKkL.png)
-
-and commit to local repository with a message.
+Click on **Source Control** icon ![](https://i.imgur.com/f5LYKkL.png) and commit to local repository with a message.
 
 ![](https://i.imgur.com/U22Ctcp.png)
 
@@ -464,7 +456,25 @@ Push to remote repository on GitHub
 
 # Extras
 
-## SSH Deploy
+## SSH and Surge.sh deploy
+
+In this scenario we have two build flows, production and development, based into master and develop branches respectively.
+
+The production flow deploys our application to a VPS server using SSH. The development deploys to Surge.sh, a service to web publishing.
+
+### Surge.sh
+
+Install surge package in your computer and create an account.n 
+
+```console
+npm install --global surge
+surge
+```
+Create a Surge.sh token to use in GitHub CI/CD workflow as secret. Save the generated token for later.
+
+```console
+surge token
+```
 
 ### Add a deployer user
 
@@ -545,6 +555,7 @@ Go to https://github.com/[:your_username]/[:repository]/settings/secrets/actions
  - DEPLOY_HOST: VPS IP address or name
  - DEPLOY_USER: Deployer username
  - DEPLOY_TARGET: Destination folder for build files
+ - SURGE_TOKEN: Your Surge.sh token
 
 <img src="https://i.imgur.com/47OEjil.png">
 
@@ -553,7 +564,11 @@ Go to https://github.com/[:your_username]/[:repository]/settings/secrets/actions
 ```deploy.yaml
 name: Node CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - develop
 
 jobs:
   build:
@@ -561,15 +576,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
+
       - name: Install npm dependencies
         run: npm install
+
       - name: Run build task
         run: npx next build && npx next export
-      - name: Deploy to Server
+
+      ## Build & Deploy Dev
+      - name: Build & Deploy Dev
+        if: github.ref == 'refs/heads/develop'
+        run: |
+          npm install -g surge
+          surge ./out https://your-custom-url.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+
+      ## Build & Deploy Production
+      - name: Build & Deploy Production
+        if: github.ref == 'refs/heads/master'
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
