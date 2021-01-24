@@ -610,9 +610,13 @@ jobs:
 
 # Next Steps
 
-*   Separate and each service into a container
-*   Use a reverse proxy like Nginx in front of Express
-*   Use a process manager for Node like [StrongLoop PM](http://strong-pm.io/)
+* Separate and each service into a container
+* Use a reverse proxy like NGINX in front of Express
+* Use Docker Compose to set up your production environment
+* Set NGINX upstream module to provide loadbalance
+* Use a process manager for Node like [StrongLoop PM](http://strong-pm.io/)
+* Manual scaling with Docker Swarm
+* Auto scaling with Kubernetes (Horizontal Pod Autoscaler)
 
 # Quick References
 
